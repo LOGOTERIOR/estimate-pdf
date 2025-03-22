@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>견적서 다운로드</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>맞춤형 견적서 다운로드</h1>
+  <form id="form">
+    <input type="text" id="company" placeholder="상호명" required><br>
+    <select id="service" required>
+      <option value="">-- 서비스 선택 --</option>
+      <option value="Starter 30.pdf">기본 로고 30</option>
+      <option value="Business Logo 60.pdf">비즈니스 로고 60</option>
+      <option value="Premium Logo 100.pdf">프리미엄 로고 100</option>
+      <option value="BI Standard 200.pdf">BI 스탠다드 200</option>
+      <option value="BI Premium 300.pdf">BI 프리미엄 300</option>
+      <option value="BI Consulting 500.pdf">BI 컨설팅 500</option>
+    </select><br>
+    <button type="submit">견적서 다운로드</button>
+  </form>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf-lib/1.17.1/pdf-lib.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
